@@ -3,7 +3,6 @@ from datetime import timedelta
 from pathlib import Path
 
 from dotenv import load_dotenv
-from firebase_admin import credentials
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
