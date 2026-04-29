@@ -12,7 +12,7 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 urlpatterns = [
     path("projects/", include("projects.urls")),
     path("services/", include("services.urls")),
-    # path("tutorials/", include("tutorials.urls")),
+    path("tutorials/", include("tutorials.urls")),
     
     # JWT endpoints
     # path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
