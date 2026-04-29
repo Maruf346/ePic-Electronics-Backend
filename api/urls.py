@@ -10,8 +10,8 @@ from rest_framework import routers
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 urlpatterns = [
-    # path("services/", include("services.urls")),
     path("projects/", include("projects.urls")),
+    path("services/", include("services.urls")),
     # path("tutorials/", include("tutorials.urls")),
     
     # JWT endpoints
