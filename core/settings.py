@@ -4,6 +4,8 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
+load_dotenv()
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -40,6 +42,10 @@ INSTALLED_APPS = [
     "django_ckeditor_5",
     
     # Local apps
+    'services',
+    'projects',
+    'tutorials',
+    'api',
 ]
 
 MIDDLEWARE = [
@@ -165,8 +171,8 @@ REST_FRAMEWORK = {
 
 # drf-spectacular settings
 SPECTACULAR_SETTINGS = {
-    "TITLE": "Autointel Diagnostics API",
-    "DESCRIPTION": "API for Autointel Diagnostics - Vehicle Maintenance and Diagnostic Management System",
+    "TITLE": "ePic Electronics API",
+    "DESCRIPTION": "API for ePic Electronics - Precision Circuits & Smart Chipsets Builder",
     "VERSION": "1.0.1",
     "TERMS_OF_SERVICE": "https://www.google.com/policies/terms/",
     "CONTACT": {"email": "maruf.bshs@gmail.com"},
@@ -183,11 +189,11 @@ SPECTACULAR_SETTINGS = {
 
 # Jazzmin settings
 JAZZMIN_SETTINGS = {
-    "site_title": "Autointel Diagnostics Admin",
-    "site_header": "Autointel",
-    "site_brand": "Autointel",
-    "welcome_sign": "Welcome to the Autointel Diagnostics Admin Panel",
-    "copyright": "Autointel Diagnostics © 2026",
+    "site_title": "ePic Electronics Admin",
+    "site_header": "ePic Electronics",
+    "site_brand": "ePic Electronics",
+    "welcome_sign": "Welcome to the ePic Electronics Admin Panel",
+    "copyright": "ePic Electronics © 2026",
     "user_avatar": None,
     "icons": {
         "auth": "fas fa-users-cog",
